@@ -23,4 +23,4 @@ print ("Sorted array")
 for i in range(len(A)): 
 	print("%d" %A[i]), 
 |-|-|
-20-24 6-12 16-16
+20-24 10-12 16-16

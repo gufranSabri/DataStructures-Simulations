@@ -58,7 +58,7 @@ function searchSimUpdate(vars){
     }
     if(vars[vars.length-1]==array[checkIndex]){
         index=checkIndex;
-        info.style.color="green";
+        info.style.color="white";
         updateArray(true);
         info.innerHTML+="We've found the target element the index "+checkIndex+"!!"+"<br>";
         info.innerHTML+="<br><button onclick='resetInfo()';}'>Reset</button>";
@@ -67,7 +67,7 @@ function searchSimUpdate(vars){
         playStarted=paused=false; 
     }
     else{
-        info.style.color="red";
+        info.style.color="white";
         info.innerHTML+="The element at index "+ checkIndex +" is not equal to our target. Let's keep moving!<br>";
         if(vars.length!=2){
             if(vars[3]>array[vars[1]])vars[0]=vars[1]+1;

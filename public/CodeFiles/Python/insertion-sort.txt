@@ -25,4 +25,4 @@ insertionSort(arr)
 for i in range(len(arr)): 
 	print ("% d" % arr[i]) 
 |-|-|
-23-26 5-19
+23-26 15-19

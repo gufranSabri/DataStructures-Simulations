@@ -35,6 +35,7 @@ head
             makeCodeTable(codedJ.split('\n').length);
             setup(topic);
             $("#help").html("Settings")
+
         })
     body
         include ./header.pug
@@ -73,7 +74,7 @@ head
                 a(href="#" onclick="bringHelp(false)") Close
         div#head.heading
             h1#heading Linear Search
-            p#help #{topic}
+            p(style="display:none")#help #{topic}
             div#settings
                 h2 Settings
                 h4 Hide
@@ -98,7 +99,7 @@ head
                     br
                 br
                 //- h4 Code Visualizer Language
-                input#J(checked type="radio" name="langSelection")
+                input#J(type="radio" name="langSelection")
                 span Java
                 br
                 input#CS(type="radio" name="langSelection")
@@ -107,7 +108,7 @@ head
                 input#CP(type="radio" name="langSelection")
                 span C++
                 br
-                input#P(type="radio" name="langSelection")
+                input#P(checked type="radio" name="langSelection")
                 span Python
                 br
                 br
@@ -163,15 +164,15 @@ head
                         p
                     div.pointer
                         p null
-                div#1.eleBox(style='position:relative;top:32px')
-                    p#index 8
-                    div.ele
-                        p
-                    div.pointer
-                        p null
+                //- div#1.eleBox(style='position:relative;top:32px')
+                //-     p#index 8
+                //-     div.ele
+                //-         p
+                //-     div.pointer
+                //-         p null
             div.editBox#eb
                 div#add.editBoxHalf
-                    h3 Add Elements
+                    h3 Add
                     input#AE.textArea(type='number')
                     br
                     br
@@ -180,7 +181,7 @@ head
                     br
                     button#fill.buttons(style='background-color:#c6ff1a') Fill
                 div#remove.editBoxHalf
-                    h3 Delete Elements
+                    h3 Delete
                     input#DE.textArea(type='number')
                     br
                     br
@@ -190,7 +191,7 @@ head
                     button#rAll.buttons(style='background-color:#ffa366') Remove All
             div.controlPanel#contP
                 h3 Control Panel
-                button#play.buttons(style='background-color:#476b6b;color:white') Play
+                button#play.buttons(style='background-color:#476b6b;color:white;') Play
                 br
                 br
                 button#pause.buttons(style='background-color:#476b6b;color:white') Pause

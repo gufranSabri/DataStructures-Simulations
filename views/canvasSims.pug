@@ -138,6 +138,8 @@ html
             if(topic=="linked-stack"||topic=="queue")canvasSetupNonB();
             if(topic=="binary-search-tree"||topic.endsWith("heap"))canvasSetupBST();
             if(topic.endsWith("sort"))canvasSetupSort();
+
+            apply()
         });
         function toggleAccess(access,action){
             document.getElementById("add").disabled=document.getElementById("del").disabled=document.getElementById("fin").disabled=access;
@@ -220,24 +222,25 @@ html
                 span Move Tree
                 br
                 button#up Up
-                button#down Down
-                br
-                button#center Center
                 br
                 button#left Left
+                button#center Center
                 button#right Right
                 br
+                
+                button#down Down
                 br
-            |Hide Panels
+                //- br
+            //- |Hide Panels
+            br(style="display:none")
+            input(style="display:none")#CV(type="checkbox" checked)
+            span(style="display:none") Code Visualizer
             br
-            input#CV(type="checkbox")
-            span Code Visualizer
-            br
-            input#IB(type="checkbox")
-            span Message Board
-            br
-            div
-                br
+            input(style="display:none")#IB(type="checkbox" checked)
+            span(style="display:none") Message Board
+            br(style="display:none")
+            div(style="display:none")
+                br(style="display:none")
                 span Code Visualizer Language
                 br
                 input#J(checked type="radio" name="langSelection")

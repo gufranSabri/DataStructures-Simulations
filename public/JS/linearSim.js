@@ -1,4 +1,4 @@
-var array=[3,-1,431,-9,41,22,5,8,500]; 
+var array=[3,-1,431,-9,41,22,2,4]; 
 var paused=false, playStarted=false, broughtSettings=false,broughtHelp=false;
 var heading,mainParent,arr,messageBoard,info;
 var index = -1, step=0,simulationSpeed=1000, loadBarLength=0;
@@ -118,7 +118,7 @@ function setup(topic){
     if(!structureTopics.includes(topic))updatePointer([],[]);
 }
 function updateArray(oring){
-    for(var i=0;i<9;i++){
+    for(var i=0;i<8;i++){
         var module= arr.children[i];
         module.children[0].innerHTML=i;
         if(oring)arr.children[i].style.opacity="1";
