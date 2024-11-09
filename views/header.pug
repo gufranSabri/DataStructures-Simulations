@@ -1,0 +1,44 @@
+doctype html
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+html
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet")
+
+    link(rel="stylesheet" type="text/css" href="/CSS/header.css")
+
+    script.
+        //- $(document).ready(function(){
+        //-     $("#US").hover(
+        //-         function(){
+        //-             $(".toast").css("display","block");
+        //-             $(".toast").html("Coming Soon");
+        //-         },
+        //-         function(){$(".toast").css("display","none");}
+        //-     )
+        //-     $("#BE").hover(
+        //-         function(){
+        //-             $(".toast").css("display","block");
+        //-             $(".toast").html("Coming Soon");
+        //-         },
+        //-         function(){$(".toast").css("display","none");}
+        //-     )
+        //- })
+    body
+        div.header
+            //- .rightHolder
+            //-     a(href="#")
+            //-         img#US(src="/CSS/Images/user.png")
+            //-     a
+            //-     img#BE(src="/CSS/Images/bell.png")
+            a(href="/")
+                img.logoImg(src="/CSS/Images/logo.png" width="30px" height="30px")
+            a.logo(href="/" target="") DSLearn
+            //- a.sections(href="/learn") Learn
+            //- a.sections(href="/tests") Tests
+            //- a.sections(href="/algorithms") Algorithms
+            //- a#aboutme.sections(href="/about") About
+        //- .toast
+        
